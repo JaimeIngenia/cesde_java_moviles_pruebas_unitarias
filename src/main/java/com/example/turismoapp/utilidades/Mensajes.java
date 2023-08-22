@@ -14,6 +14,7 @@ public enum Mensajes {
     NIT_SOLO_DIGITOS("Señor usuario su nit esta mal, debe tener solo dígitos, no caracteres"),
     NIT_10_DIGITOS("Señor usuario su nit esta mal, debe tener al menos 10 digitos"),
     NOMBRE_LOCAL_30_CARACTERES("Señor usuario su nombre de local esta mal, no debe sobre pasar los 30 caracteres"),
+    NOMBRE_LOCAL_15_CARACTERES("Señor usuario su nombre de local esta mal, no debe sobre pasar los 15 caracteres"),
     CORREO_INVALIDO("Señor usuario su correo esta mal no cumple con los requisitos para ser correo");
     //ATRIBUTO
 

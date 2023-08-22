@@ -2,7 +2,21 @@ package com.example.turismoapp.modelos;
 
 import com.example.turismoapp.validaciones.UsuarioValidacion;
 
-public class Usuario {
+public abstract class Usuario  {
+
+    //variables de la clase abstracta
+    private final Integer costoAnual = 1200000;
+    private final Double IVA = 0.19;
+
+    //getter y setter de la clase abstracta
+
+    public Integer getCostoAnual() {
+        return costoAnual;
+    }
+
+    public Double getIVA(){
+        return IVA;
+    }
 
 //ATRIBUTOS - VARIABLES DATOS
     private Integer id;
@@ -111,4 +125,8 @@ public class Usuario {
                 ", validacionJaime=" + validacionJaime +
                 '}';
     }
+
+    //metodo abstracto
+
+    public abstract Double calcularAnualidad();
 }

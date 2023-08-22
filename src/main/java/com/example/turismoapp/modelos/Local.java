@@ -2,7 +2,31 @@ package com.example.turismoapp.modelos;
 
 import com.example.turismoapp.validaciones.LocalValidacion;
 
-public class Local {
+public abstract class Local {
+
+    //variables de la clase abstracta
+
+    private final Integer costoMensual = 70000;
+    private final Integer costoAnual = 1200000;
+    private final Double IVA = 0.19;
+
+    //getter y setter de la clase abstracta
+
+    public Integer getCostoAnual() {
+        return costoAnual;
+    }
+
+    public Integer getCostoMensual() {
+        return costoMensual;
+    }
+
+    public Double getIVA(){
+        return IVA;
+    }
+
+    public abstract Double calcularAnualidad();
+
+
 //ATRIBUTOS - VARIABLES DATOS
     private Integer id;
     private String nit;

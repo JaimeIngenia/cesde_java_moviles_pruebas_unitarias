@@ -46,4 +46,17 @@ public class LocalValidacion {
 
     }
 
+    public Boolean validarNombreRepresentanteLegal (String nombre ) throws Exception {
+        String expresionRegularNombreRepresentanteLegal = "^.{1,15}$";
+
+        if(!utilObjeto.buscarCoincidencias(expresionRegularNombreRepresentanteLegal,nombre))
+        {
+            throw new Exception(Mensajes.NOMBRE_LOCAL_15_CARACTERES.getMensaje());
+        }
+        else
+        {
+            return true;
+        }
+    }
+
 }

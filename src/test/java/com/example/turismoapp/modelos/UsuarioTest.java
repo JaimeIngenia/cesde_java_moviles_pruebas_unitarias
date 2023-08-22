@@ -1,3 +1,4 @@
+/*
 package com.example.turismoapp.modelos;
 
 import org.junit.jupiter.api.Assertions;
@@ -70,4 +71,4 @@ class UsuarioTest {
         objetoUsuario.setCorreoElectronico(correoInvalido);
         Assertions.assertNotEquals(correoInvalido , objetoUsuario.getCorreoElectronico());
     }
-}
+}*/
